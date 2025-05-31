@@ -5,7 +5,12 @@ const app = express();
 const PORT = process.env.PORT || 5001;
 
 // Configure CORS to allow requests from your frontend
-const allowedOrigins = ["http://localhost:5173", "http://127.0.0.1:5173", "*"];
+const allowedOrigins = [
+  "http://localhost:5173",
+  "http://127.0.0.1:5173",
+  "https://e-commerce-crypto.netlify.app",
+  "*",
+];
 
 const corsOptions = {
   origin: function (origin, callback) {
